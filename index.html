@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <header>
+        <nav class="navbar">
+            <!-- Logo -->
+            <span class="logo">AH</span>
+            <!-- nav links -->
+            <ul class="nav-links">
+                <li><a href="#intro" class="nav-links-item">Intro</a></li>
+                <li><a href="#about" class="nav-links-item">About</a></li>
+                <li><a href="#skills" class="nav-links-item">Skills</a></li>
+                <li><a href="#projects" class="nav-links-item">Projects</a></li>
+                <li><a href="#contact" class="nav-links-item">Contact me</a></li>
+            </ul>
+            <!-- nav actions -->
+            <div class="nav-actions">
+
+                <a href="/" class="btn-download" download="./resume/resume.pdf">
+                    <i class="fas fa fa-download"></i>
+                    Download CV</a>
+            </div>
+            <!-- menu button -->
+            <div class="menu-button">
+                <i class="fas fa fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- Start Main -->
+    <main class="container">
+        <section id="intro" class="d-flex flex-col">
+            <!-- Intro content -->
+            <div class="intro-left">
+                <h4>Hello, there</h4>
+                <h1>I am Abdelaziz Hanzaz</h1>
+                <h3>Full-Stack Developer</h3>
+                <div class="intro-actions">
+                    <a href="#about" class="btn btn-primary">
+                        <i class="fas fa fas fa-user-tie"></i>
+                        About me</a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa fas fa-code"></i>
+                        Projects</a>
+                </div>
+            </div>
+            <div class="intro-right">
+                <img src="../images/intro-image.jpg" alt="profile image" width="300" height="300" />
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h1 class="title-center">About Me</h1>
+            <div class="about-content">
+                <img class="img-profile" src="/images/profile.jpg" alt="John Doe" width="300" height="300">
+                <div>
+                    <h3>Abdelaziz Hanzaz</h3>
+
+                    <p>Full stack developer with 4+ years of experience in .NET and native Android app development.
+                        Skilled in Angular, React, and Vue on front-end and C#, .NET Framework, .NET Core, and SQL
+                        Server on back-end. Published multiple apps on Google Play Store. Passionate about building
+                        high-quality web and mobile apps.</p>
+
+                    <h3>Education</h3>
+                    <p class="education-item"><i class="fas fa fas fa-award"></i> Diploma in Software Development from OFPPT between 2016 - 2018.</p>
+                    <p class="education-item"><i class="fas fa fas fa-award"></i> Diploma in IT from OFPPT between 2014 - 2016.</p>
+
+                    <h3>Hobbies</h3>
+                    <ul class="d-flex">
+                        <li><i class="fas fa fas fa-basketball-ball"></i> Football</li>
+                        <li><i class="fas fa fas fa-swimmer"></i> Swiming</li>
+                        <li><i class="fas fa fas fa-language"></i> Languages</li>
+                        <li><i class="fas fa fas fa-bicycle"></i> Bicycle</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="" class="social-media-item"><i class="fas fa fab fa-google "></i></a>
+                <a href="" class="social-media-item"><i class="fas fa fab fa-github"></i></a>
+                <a href="" class="social-media-item"><i class="fas fa fab fa-linkedin"></i></a>
+                <a href="" class="social-media-item"><i class="fas fa fab fa-facebook"></i></a>
+                <a href="" class="social-media-item"><i class="fas fa fab fa-whatsapp"></i></a>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h1 class="title-center">Skills</h1>
+            <!-- Skills content -->
+            <div class="d-flex-wrap">
+                <div class="web-skills">
+                    <h3><i class="fas fa fas fa-globe"></i> Web</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript, Reactjs</li>
+                        <li>NPM, Nodejs, Expressjs, Nestjs</li>
+                        <li>PHP, Laravel Framework</li>
+                        <li>Http/s, Rest API, TCP/IP</li>
+                        <li>Host, Server, Domain, DNS</li>
+                    </ul>
+                </div>
+                <div class="android-skills">
+                    <h3><i class="fas fa fab fa-android"></i> Mobile</h3>
+                    <ul>
+                        <li>Java, Kotlin, Dart</li>
+                        <li>Android SDKs</li>
+                        <li>Flutter SDK</li>
+                        <li>XML, Jetpack compose</li>
+                        <li>MVVM, MVC</li>
+                        <li>Retrofit, Dagger Hilt</li>
+                        <li>Firebase</li>
+                        <li>SQLite, Hive, Room</li>
+                </div>
+                <div class="networking-skills">
+                    <h3><i class="fas fa fas fa-network-wired"></i> Networking</h3>
+                    <ul>
+                        <li>OSI Model</li>
+                        <li>Cabling and Connectors</li>
+                        <li>Wireless Networking</li>
+                        <li>Network Security Fundamentals</li>
+                        <li>Troubleshooting Methodology</li>
+                        <li>Network Design Principles</li>
+                        <li>Wireshark</li>
+                        <li>Cisco Packet Tracer</li>
+                    </ul>
+                </div>
+                <div class="networking-skills">
+                    <h3><i class="fas fa fas fa-code"></i>Others</h3>
+                    <ul>
+                        <li>Github</li>
+                        <li>Chatgpt, AI Tools</li>
+                        <li>UML diagrams</li>
+                        <li>Reactive Programming</li>
+                        <li>Operating Systems</li>
+                        <li>Computer Hardware</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1 class="title-center">Projects</h1>
+            <!-- Projects content -->
+            <div class="projects-list">
+             
+                <div class="project-item">
+                    <img src="../images/intro-image.jpg" alt="project1" width="150" height="150">
+                    <h5 class="project-title">Android Apps</h5>
+                    <div class="project-actions">
+                       <a href=""><i class="fas fa fas fa-code"></i> Github</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="../images/intro-image.jpg" alt="project1" width="150" height="150">
+                    <h5 class="project-title">Laravel Apps</h5>
+                    <div class="project-actions">
+                       <a href=""><i class="fas fa fas fa-code"></i> Github</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="../images/intro-image.jpg" alt="project1" width="150" height="150">
+                    <h5 class="project-title">Flutter App</h5>
+                    <div class="project-actions">
+                       <a href=""><i class="fas fa fas fa-code"></i> Github</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="../images/intro-image.jpg" alt="project1" width="150" height="150">
+                    <h5 class="project-title">Reactjs Apps</h5>
+                    <div class="project-actions">
+                       <a href=""><i class="fas fa fas fa-code"></i> Github</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="../images/intro-image.jpg" alt="project1" width="150" height="150">
+                    <h5 class="project-title">Portfolio Website</h5>
+                    <div class="project-actions">
+                       <a href=""><i class="fas fa fas fa-code"></i> Github</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="../images/intro-image.jpg" alt="project1" width="150" height="150">
+                    <h5 class="project-title">Wedding Flutter</h5>
+                    <div class="project-actions">
+                       <a href=""><i class="fas fa fas fa-code"></i> Github</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="../images/intro-image.jpg" alt="project1" width="150" height="150">
+                    <h5 class="project-title">Note Android App</h5>
+                    <div class="project-actions">
+                       <a href=""><i class="fas fa fas fa-code"></i> Github</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="../images/intro-image.jpg" alt="project1" width="150" height="150">
+                    <h5 class="project-title">Rest APIs</h5>
+                    <div class="project-actions">
+                       <a href=""><i class="fas fa fas fa-code"></i> Github</a>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="contact">
+            <h1 class="title-center">Contact</h1>
+            <!-- Contact content -->
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h5>Drop me a message</h5>
+                    <p class="message">I hope this message finds you well. I would appreciate it if you could drop me a message.</p>
+                    <div class="info-item"><p class="phone"><i class="fas fa fas fa-phone-square-alt"></i> +212 631960109</p></div>
+                    <div class="info-item"><p class="email"><i class="fas fa far fa-envelope"></i> abdelazizhanzaz@gmail.com</p></div>
+                    <div class="info-item"><p class="address"><i class="fas fa fas fa-search-location"></i> Morocco, Safi 46500 </p></div>
+                </div>
+                <div class="contact-form">
+                    <form action="/" method="post">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Start Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <!-- Logo -->
+            </div>
+            <div class="footer-links">
+                <!-- Links -->
+            </div>
+            <div class="footer-social">
+                <!-- Social media icons -->
+            </div>
+            <div class="copyright">
+                <!-- Copyright info -->
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
