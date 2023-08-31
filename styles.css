@@ -119,19 +119,17 @@ h3 {
 }
 
 .nav-links {
-  width: 600px;
   display: flex;
-  justify-content: center;
-  column-gap: 16px;
-
+  width: 600px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .nav-links-item {
   color: var(--white);
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   padding: 4px 16px;
-  border-radius: 16px;
   transition: color 200ms ease-in;
   cursor: pointer;
 }
@@ -139,6 +137,7 @@ h3 {
 .nav-links-item:hover {
   color: var(--hover-secondary);
 }
+
 
 .btn-download {
   padding: 8px 16px;
@@ -281,9 +280,9 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding-bottom: 16px;
   border: 2px solid var(--hover-secondary);
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
   width: 150px;
   overflow: hidden;
   transition: background-color 0.2s linear;
@@ -394,35 +393,48 @@ textarea{
   .d-flex{
     justify-content: space-around;
   }
-  .about-content, .contact-content{
+  #intro, .about-content, .contact-content{
     flex-direction: column;
   }
   .navbar{
-    padding: 0px 8px;
+    padding: 0 16px;
     height: calc(var(--navHieght) - 16);
   }
   .nav-links {
     position: absolute;
-    top: var(--navHieght);
     right: 0;
+    top: 45px;
+    padding: 8px;
     flex-direction: column;
-    row-gap: 16px;
-    padding: 8px 32px;
+    background-color: var(--primary);
+    color: var(--primary);
     display: none;
+    width: 200px;
+    z-index: 1;
+    animation: slideRight 0.5s ease forwards;
+    opacity: 0;
+
   }
-  .btn-download{
-    display: none;
+  .nav-links-item{
+    display: block;
+    padding: 16px 8px;
+    margin-bottom: 4px;
   }
-  .menu-button{
-    display: unset;
-    margin-right: 8px;
+  .nav-links-item:hover{
+    background-color: var(--secondary);
+    color: var(--white);
+    font-size: 1em;
   }
 
- 
- 
-  #intro{
-    flex-direction: column;
+  .btn-download, .hide-menu{
+    display: none;
   }
+  .menu-button, .show-menu{
+    display: unset;
+  }
+
+
+ 
   .intro-actions{
     justify-content: space-evenly;
   }
@@ -438,4 +450,26 @@ textarea{
  
  
 
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
